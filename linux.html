@@ -1,0 +1,356 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to Linux</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Anne LoVerso">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/rh2.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!--<link rel="stylesheet" href="lib/css/print/pdf.css">-->
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-autoslide="4000">
+					<h1>Introduction to Linux</h1>
+					<h3>MIT Splash 2014</h3>
+					<p>
+						Anne LoVerso (Olin College of Engineering)
+					</p>
+					<img width="300" src="./tux.png"/>
+				</section>
+
+				<section>
+					<h2>What is Linux?</h2>
+					<ul>
+					<li>It's an operating system, like Windows or MacOS.  It's called "Unix-like" because it's similar to the Unix operating system</li>
+					<li>It's free and open source software (FOSS) - that is, free as in speech.</li> </ul>
+				</section>
+
+				<section>
+					<h2>Okay, What's Unix?</h2>
+					<ul>
+						<li>Published in 1971</li>
+						<li>Operating system as well as a model for others</li>
+						<li>Inspired the Unix philosophy, meaning the OS provides a set of simple tools that each perform a limited, well-defined function, with a unified filesystem, shell scripting and command language</li>
+						<li>Written entirely in assembly language, then re-written in C.  The C programming language was developed to be the systems programming language for Unix</li>
+				</section>
+
+				<section>
+					<h2>History of Linux</h2>
+					<div align="left">
+						<p><b>1983</b> - Richard M. Stallman founds the GNU Project, creating a "complete Unix-compatible software system" composed entirely of free software.</br></p>
+						<p><b>1989</b> - Stallman writes the GNU General Public License</br></p>
+						<p><b>Early 1990s</b> - Many of the programs required in an operating system (such as libraries, compilers, text editors, a Unix shell, and a windowing system) are completed, although low-level elements such as device drivers, daemons, and the kernel are stalled and incomplete.</br></p>
+						<p><b>1991</b> - Linus Torvalds gets frustrated with OS licensing and starts working on his own, which eventually becomes the Linux kernel</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Okay, Why Use Linux?</h2>
+					<ul>
+						<li>Free and open source philosophy</li>
+						<li>Software updates</li>
+						<li>Less vulnerable to viruses</li>
+						<li>Download new software with a single command</li>
+						<li>Command line makes everything easy</li>
+						<li>Developer-friendly</li>
+						<li>Free, unlimited support</li>
+						<li>Better for the environment</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Linux Distributions</h2>
+						Because Linux is free and open source, it can be rebuilt in many different forms.  Different distros build off the base Linux kernel and apply unique layers on top of it
+					</section>
+
+					<section>
+						<h2>Ubuntu</h2>
+						One of the most popular.  Built on Debian, meant to be stable, easy-to-use, friendly, and clean.  Modern without being bleeding-edge.  Uses Unity desktop for a solid graphical experience
+						<img width="600" src="./ubuntu.png">
+					</section>
+
+					<section>
+						<h2>Mint</h2>
+						Originally built off Ubuntu, now has its own flavor.  Uses different desktop graphics from Ubuntu, and doesn't auto-install critical software updates.  Some people like having this extra degree of control, some call it insecure.
+						<img width="550" src="./mint.png">
+					</section>
+
+					<section>
+						<h2>Debian</h2>
+						Debian was founded over 20 years ago, and is highly stable, although somewhat more conservative than some bleeding edge distros.  Ubuntu is based heavily off Debian.  It's the largest non-commercial distro.
+						</br>
+						<img width="500" src = "./debian.png">
+					</section>
+
+					<section>
+						<h2>Fedora</h2>
+						Sponsored by Red Hat, Fedora has a very strong focus on free software - it's very difficult to install proprietary software here.  Integrates upstream software into its desktop environment.
+						<img width="500" src="./fedora.png">
+					</section>
+
+					<section>
+						<h2>CentOS and RHEL</h2>
+						RHEL stands for Red Hat Enterprise Linux.  This is built for businesses, servers, and workstations who pay for RHEL support subscriptions and is protected under trademark law.  CentOS is RHEL-based, but free.
+						</br>
+						<img width="500" src="./centos.png"/>
+					</section>
+
+					<section>
+						<h2>openSUSE and SUSE Linux Enterprise</h2>
+						Community-created distro sponsored by Novell. Novell purchased SuSE Linux in 2003, and they still create an enterprise Linux project known as SUSE Linux Enterprise.
+						<img width="600" src="./suse.png">
+					</section>
+
+					<section>
+						<h2>ArchLinux</h2>
+						Much more old-school than other distributions, Arch subscribes to the "Keep It Simple" philosophy - requiring the user to configure the system properly.  It's for users who want their OS to get out of their way.
+						</br>
+						<img width="600" src="./arch.png">
+					</section>
+
+					<section>
+						<h2>Slackware</h2>
+						Slackware Linux is the oldest distro still maintained and putting out new releases.  Very conservative, it dispenses all graphics and boots to command line by default.
+						<img width="600" src="./slcakware.png">
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>How to Install Linux on a Virtual Machine</h2>
+						<p>Using a virtual machine allows you to run a Linux distro virtually on top of Windows or Mac</p>
+						<p>The other (more involved) option for running Linux would be to create a dual boot partition</p>
+					</section>
+					<section>
+						<h2>Download VMware Player</h2>
+						Go to <font color="#F08080">https://my.vmware.com/web/vmware/downloads</font>, scroll down to “VMware Player” under the <b>Desktop & End-User Computing</b> section.  Download and install the exe file for the most recent version (likely VMware-player-6.0.4-2237854.exe)
+					</section>
+					<section>
+						<h2>Get Linux</h2>
+						Download the .iso file for your chosen Linux distribution.  Ubuntu  (a good place to start) is available at <font color="#F08080">http://www.ubuntu.com/download/desktop</font>
+					</section>
+					<section>
+						<h2>Set it up in VMware</h2>
+						<p>Open VMware player.  On the menu on the right-hand side, select “Create a New Virtual Machine”</p>
+						<img width="300" src="./step1.png">
+					</section>
+					<section>
+						<p>At the next screen, select the radio button for “Installer disc image file” and tell it where to find the .iso file that you downloaded and saved</p>
+						<img width="450" src="./step2.png">
+					</section>
+					<section>
+						Click next, enter your preferred personal information.  The username and password will be how you log into your virtual machine.
+					</section>
+					<section>
+						Click next, and choose a computer name (feel free to be creative!) and choose where the virtual machine data will be saved on your computer.  Usually the default is fine.
+					</section>
+					<section>
+						Click next, and specify disk capacity.  For normal functions, keeping the defaults is fine.  Be sure to allow at least 20GB of space
+					</section>
+					<section>
+						<p>Click next, review the info, and click finish.  It will auto-power on your machine, and you can access your desktop.  The machine will also appear on the left-hand side of VMware in the future.  To start it at any point, just double click.</p> 
+						<img width="450" src="./step3.png">
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Okay, now how do I use Linux?</h2>
+						The learning curve in any Linux user, especially if you, like most, are coming from a non-Unix-like OS like Windows, is command line interpretation.
+					</section>
+
+					<section>
+						<h2>A few commands</h2>
+						<ul>
+							<li>cd - change directory; <i>cd Documents</i></li>
+							<li>ls - list</li>
+							<li>pwd - print working directory</li>
+							<li>mkdir - make directory; <i>mkdir my_new_directory</i></li>
+							<li>rm - remove; <i>rm my_file.txt</i></li>
+							<li>rmdir - remove directory; <i>rmdir my_new_directory</i></li>
+							<li>cp - copy a file; <i>cp my_file.txt /home/Documents/other_directory</i>
+							<li>mv - move (or rename); <i>mv my_other_file.txt /home/Documents/other_directory</i></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Working with Files</h2>
+						<ul>
+							<li>touch - create file; <i>touch newfile.txt</i></li>
+							<li>cat - view contents of a file; <i>cat myfile.txt</i></li>
+							<li>wc - word count; <i>wc example.txt</i></li>
+							<li>grep - search tool; <i>grep "linux is great" splash.txt</i></li>
+							<li>sed - search and replace; <i>sed s/MIT/Olin coolstuff.txt</i></li>
+
+						</ul>
+					</section>
+
+					<section>
+						<h2>Getting new stuff</h2>
+						Linux distributions come with a package manager, like <i>yum</i> (on Fedora, RHEL, CentOS, with <i>RPM</i>) or <i>apt</i> (Ubuntu, Debian)
+					</section>
+
+					<section>
+						<h2>The Superuser</h2>
+						Some files or actions can only be accessed by <i>root</i>, which is a user with special privileges, similar to Administrator in Windows
+					</section>
+
+					<section>
+						<h2>Congrats!  Now you understand this</h2>
+						<img width="600" src="./sudo.jpg">
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h1>Quiz!</h1>
+					</section>
+
+					<section>
+						<h2>Macintosh is a variant of...</h2>
+						<ul>
+						<li>Linux</li>
+						<li>Windows</li>
+						<li>Unix</li>
+						<li>Apple</li>
+						<li>Steve Jobs</li>
+						</ul>
+					</section>	
+
+					<section>
+						<h2>____is the world’s largest non-commercial Linux distribution</h2>
+						<ul>
+						<li>Debian</li>
+						<li>Ubuntu</li>
+						<li>Fedora</li>
+						<li>Mint</li>
+						<li>Slackware</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>At the Linux prompt, I can always find out what directory I am in by typing ___</h2>
+					</section>
+
+					<section>
+						<h2>The way to execute a command as root user is ____</h2>
+					</section>
+
+					<section>
+						<h2>What's the command for "search"?</h2>
+					</section>
+
+					<section>
+						<h2>What do programs like "yum" or "apt-get" do?</h2>
+					</section>
+					<section>
+						<h2>Who wrote the original Linux kernel?</h2>
+						<ul>
+							<li>Richard M. Stallman</li>
+							<li>John Ubuntu</li>
+							<li>Linus Torvalds</li>
+							<li>Tux the Penguin</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Name two reasons why people might use Linux</h2>
+					</section>
+					<section>
+						<h2>Name one reason why free and open source software is important</h2>
+					</section>
+					<section>
+						<h2>Bonus: What's my favorite Linux distribution?</h2>
+					</section>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+		    // other options...
+
+		    multiplex: {
+		        // Example values. To generate your own, see the socket.io server instructions.
+		        secret: '14071803059658508863', // null so the clients do not have control of the master presentation
+		        id: '037755ff12171c51', // id, obtained from socket.io server
+		        url: 'revealjs.jit.su:80' // Location of socket.io server
+		    },
+
+		    // Don't forget to add the dependencies
+		    dependencies: [
+		        { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
+		        { src: 'plugin/multiplex/master.js', async: true },
+		        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+        		{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+
+		        // other dependencies...
+		    ]
+		});
+				/*// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+        				{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});*/
+
+		</script>
+
+	</body>
+</html>
